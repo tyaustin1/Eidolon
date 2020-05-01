@@ -1,0 +1,2 @@
+INSERT INTO Card (name, imageUrl, code)
+VALUES ('Lightning', 'https://fftcg.cdn.sewest.net/images/cards/full/1-141L_eg.jpg', '1-141L');
