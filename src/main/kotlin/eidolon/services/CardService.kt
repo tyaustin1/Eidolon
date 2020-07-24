@@ -15,4 +15,8 @@ class CardService(private val repository: CardRepository) {
     return repository.findBycode(code)
   }
 
+  fun findCardsByNames(names: List<String>): List<Card> {
+    return repository.findBynameIn(names)
+  }
+
 }

@@ -6,4 +6,5 @@ import eidolon.entities.CardEntity.*
 interface CardRepository : CrudRepository<Card, String> {
   fun findByname(name: String): Card?
   fun findBycode(code: String): Card?
+  fun findBynameIn(names: List<String>): List<Card>
 }
